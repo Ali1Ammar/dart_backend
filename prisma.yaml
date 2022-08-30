@@ -1,0 +1,2 @@
+environment:
+  DATABASE_URL: postgresql://postgres:admin@localhost:5432/ad_manger?schema=public

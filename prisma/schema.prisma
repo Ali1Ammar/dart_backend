@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-dart"
+  output   = "lib/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int      @id @default(autoincrement())
+  email String   @unique
+  name  String
+  role  String[]
+}
+
+model Ad {
+  id        Int      @id @default(autoincrement())
+  title     String
+  filter    Json
+  content   Json
+  createdAt DateTime @default(now())
+  expiredAt DateTime
+}
