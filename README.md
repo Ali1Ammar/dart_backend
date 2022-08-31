@@ -1,5 +1,6 @@
 # dart for the backend
 **a project structure for using dart to develop a rest api**
+
 **_tools used :_**
 - shelf , shelf_plus , shelf_router_generator
 - get_it , injectable
@@ -9,6 +10,12 @@
 - dotenv (for config)
 - logging (for logging)
 - json_annotation (serialization and deserialization)
+
+TODO: we may want some tools to easily this functionallty
+- validator 
+- apply middleware using annotations @Middleware(JwtGuard)
+- parser
+- error handling 
 
 some code:
 ```dart
