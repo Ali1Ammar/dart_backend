@@ -1,16 +1,15 @@
-import 'src/shared/prisma_service.dart';
+import 'package:dart_backend/src/model/ad/ad_controller.dart';
+import 'package:dart_backend/src/shared/inject.dart';
 import 'package:shelf_plus/shelf_plus.dart';
-import 'src/shared/inject.dart';
-import 'src/ad/ad_controller.dart';
 
 Handler init() {
   final getIt = configureDependencies();
-  
-  var app = Router().plus;
+
+
+  final app = Router().plus;
 
   //mount your contoller to router here
-  getIt.get<PrismaService>();
   final adController = getIt.get<AdController>();
-  app.mount("/ad", adController.router);
+    app.mount("/ad", adController.router);
   return app;
 }
