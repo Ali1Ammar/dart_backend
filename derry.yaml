@@ -1,0 +1,3 @@
+run : dart run  --enable-vm-service bin/main.dart
+build: dart run build_runner build
+orm: dart run orm generate
