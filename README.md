@@ -10,6 +10,7 @@
 - dotenv (for config)
 - logging (for logging)
 - json_annotation (serialization and deserialization)
+- derry for script running
 
 TODO: we may want some tools to easily this functionallty
 - validator 
