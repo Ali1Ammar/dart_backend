@@ -8,17 +8,22 @@ environment:
 
 dependencies:
   json_annotation: ^4.6.0
-  orm: 
-    path: /home/aliammar/Desktop/prisma/orm
+  orm: ^2.0.0-dev.2
   shelf_plus: ^1.4.0
   injectable:  
   get_it:  
+  dart_jsonwebtoken: ^2.4.2
+  dargon2: ^3.2.1
+  logging: ^1.0.2
+  dotenv: ^4.0.1
   
 
 
 dev_dependencies:
   build_runner: ^2.2.0
   json_serializable: ^6.3.1
-  mocktail: ^0.3.0
   injectable_generator:  
   shelf_router_generator:
+  lints: ^2.0.0
+
+scripts: derry.yaml
